@@ -1,1 +1,7 @@
-<p>education works!</p>
+<ul *ngFor="let educacion of education;">
+  <li>
+    Education: <br> 
+    {{ educacion.university }} <br>
+    {{ educacion.highSchool }} <br>
+  </li>
+</ul>
