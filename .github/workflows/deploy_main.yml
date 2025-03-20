@@ -28,9 +28,6 @@ jobs:
       - name: list dir
         run: ls -la dist/mycv/browser
         
-      - name: copy index.html, css, js
-        run: cp dist/mycv/browser/*.* docs
-      
       - name: download, run httpd image
         run: |
            docker run -d --name serving_base httpd
