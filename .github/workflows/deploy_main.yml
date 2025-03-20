@@ -28,9 +28,6 @@ jobs:
       - name: list dir
         run: ls -la dist/mycv/browser
         
-      - name: copy index.html, css, js
-        run: cp dist/mycv/browser/*.* docs
-      
       - name: download, run httpd image
         run: |
            docker run -d --name serving_base httpd
@@ -48,8 +45,8 @@ jobs:
           docker exec serving_base ls -la /usr/local/apache2/htdocs
 
       - name: build custom docker image
-        run: docker commit  --changge "ENV MODEL_NAME ${{ secrets.MODEL_NAME }}"
-             serving_base ${{ secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
+        run:  docker commit  --change "ENV MODEL_NAME ${{ secrets.MODEL_NAME }}"
+              serving_base ${{ secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
 
       - name : list images
         run: |
