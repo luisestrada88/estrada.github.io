@@ -1,9 +1,9 @@
 name: CI/CD deploy release
 on: 
   push:
-    branches: [ "main"]
+    branches: [ "deploy-release"]
   pull_request:
-    branches: [ "main"]
+    branches: [ "deploy-release"]
 jobs:
  ci_cd_deploy_release:
     runs-on: ubuntu-latest
