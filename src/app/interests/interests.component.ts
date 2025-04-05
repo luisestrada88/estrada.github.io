@@ -9,11 +9,11 @@ import { map } from 'rxjs/operators';
   styleUrl: './interests.component.css'
 })
 export class InterestsComponent {
-	interests: Interests[] = [];
+        interests: Interests[] = [];
 
-	constructor(public interestsService: InterestsService)
-	{
-   	  console.log(this.interestsService);
+        constructor(public interestsService: InterestsService)
+        {
+          console.log(this.interestsService);
           this.interestsService.getInterests().snapshotChanges().pipe(
       map(changes =>
         changes.map(c => ({
@@ -25,4 +25,4 @@ export class InterestsComponent {
       console.log(this.interests);
     });
   }
-	}
+ }

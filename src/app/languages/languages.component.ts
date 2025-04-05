@@ -10,10 +10,11 @@ import { map } from 'rxjs/operators';
 })
 export class LanguagesComponent {
    languages: Languages[] = [];
-	
-	constructor(public languagesService: LanguagesService)
-	{
-	 console.log(this.languagesService);
+
+        constructor(public languagesService: LanguagesService)
+        {
+         console.log(this.languagesService);
+
     this.languagesService.getLanguages().snapshotChanges().pipe(
       map(changes =>
         changes.map(c => ({

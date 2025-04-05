@@ -1,5 +1,7 @@
 export class Education {
   id?: string;
-  highSchool?: string = 'high school name';
-  university?: string = 'university name';
+  carrera?: string = 'studio name';
+  educationHome?: string = 'formation name';
+  endDate?: string = 'end formation';
+  startDate?: string = 'start formation';
 }
