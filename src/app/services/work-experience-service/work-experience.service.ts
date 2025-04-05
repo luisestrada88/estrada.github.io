@@ -8,7 +8,6 @@ import { WorkExperience } from '../../models/work-experience/work-experience.mod
     providedIn: 'root'
 })
 export class WorkExperienceService {
-
     accesoWorkExperience = "work experience running...";
 
     private dbPath = '/work-experience';

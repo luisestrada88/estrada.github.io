@@ -12,6 +12,7 @@ export class WorkExperienceComponent {
 
     workExperience: WorkExperience[] = [];
 
+
     constructor(public workExperienceService: WorkExperienceService)
     {
         console.log(this.workExperienceService);
@@ -27,3 +28,4 @@ export class WorkExperienceComponent {
         });
     }
 }
+
