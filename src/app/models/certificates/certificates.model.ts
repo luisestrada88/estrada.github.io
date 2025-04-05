@@ -1,5 +1,5 @@
 export class Certificates {
   id?: string; 
-  java?: string = 'java´s certification';
-  oracle?: string = 'oracle´s certification';
+  name?: string = 'name´s certification';
+  year?: string = '(date certification)';
 }
