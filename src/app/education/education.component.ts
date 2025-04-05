@@ -10,19 +10,19 @@ import { map } from 'rxjs/operators';
 })
 export class EducationComponent {
 
-	education: Education [] = [];
+        education: Education [] = [];
 
-	constructor(public educationService: EducationService){
-	  console.log(this.educationService);
-	  this.educationService.getEducation().snapshotChanges().pipe(
-     	     map(changes =>
+        constructor(public educationService: EducationService){
+          console.log(this.educationService);
+          this.educationService.getEducation().snapshotChanges().pipe(
+             map(changes =>
                changes.map(c => ({
                  id: c.payload.doc.id, ...c.payload.doc.data()
-	    }))
+            }))
            )
         ).subscribe(data => {
           this.education = data;
-	  console.log(this.educationService);
-	});
+          console.log(this.educationService);
+        });
 }
 }

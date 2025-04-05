@@ -1,8 +1,6 @@
-<ul *ngFor="let certificaciones of certificates;">
+<ul *ngFor="let cer of certificates;">
   <li>
-    Skills: <br>
-    {{ certificaciones.java }} <br>
-    {{ certificaciones.oracle }} <br>
+    Certificates: <br>
+    {{ cer.name }} -  {{ cer.year }} <br>
   </li>
 </ul>
-~

@@ -1,5 +1,4 @@
 export class Skills {
   id?: string;
-  objectProgramming?: string = 'programing';
-  dateBase?: string = 'Data base';
+  skills?: string = 'skills';
 }

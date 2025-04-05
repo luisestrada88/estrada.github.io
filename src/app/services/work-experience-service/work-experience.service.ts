@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore' 
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore'
 import { WorkExperience } from '../../models/work-experience/work-experience.model';
 
 
@@ -8,7 +8,6 @@ import { WorkExperience } from '../../models/work-experience/work-experience.mod
     providedIn: 'root'
 })
 export class WorkExperienceService {
-    
     accesoWorkExperience = "work experience running...";
 
     private dbPath = '/work-experience';
@@ -23,4 +22,3 @@ export class WorkExperienceService {
         return this.workExperienceRef;
     }
 }
-
