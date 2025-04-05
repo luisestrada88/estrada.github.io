@@ -1,5 +1,5 @@
 export class Languages {
   id?: string;
-  espaniol?: string = 'español';
-  english?: string = 'inglés'; 
+  name?: string = 'languages';
+  level?: string = 'level to languages'; 
 }

@@ -3,5 +3,5 @@ export class Education {
   carrera?: string = 'studio name';
   educationHome?: string = 'formation name';
   endDate?: string = 'end formation';
-  startDate?: string 'start formation';
+  startDate?: string = 'start formation';
 }

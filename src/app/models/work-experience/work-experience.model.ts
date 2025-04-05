@@ -7,4 +7,3 @@ export class WorkExperience {
     company?: string;
     accomplishment?: string;
 }
-
