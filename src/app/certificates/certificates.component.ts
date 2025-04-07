@@ -24,4 +24,5 @@ export class CertificatesComponent {
       this.certificates = data;
       console.log(this.certificates);
     });
-}}
+ }
+}

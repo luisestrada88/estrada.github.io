@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  display: flex;
+  justify-content: center;  /* Centra la tabla horizontalmente */
+  align-items: center;      /* Centra la tabla verticalmente */
+  height: 100vh;            /* Asegura que ocupe el 100% de la ventana */
+  margin: 0;                /* Elimina márgenes por defecto */
+  background-color: #caf7ff
+}
+
+/* Estilos de la tabla */
+table {
+  width: 100%; /* Puedes ajustar el ancho de la tabla */
+  border-collapse: collapse; /* Elimina los espacios entre las celdas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la tabla */
+  margin-top: 30px; /* Espacio superior */
+  background-color: #f2fdff
+}
+
+td {
+  padding: 15px;             /* Espaciado interno dentro de las celdas */
+  text-align: center;        /* Centra el contenido dentro de las celdas */
+  border: 1px solid #ddd;    /* Borde suave alrededor de las celdas */
+}
+
+tr:nth-child(even) {
+background-color: #f1f1f1; /* Fondo alterno para las filas */  
+}
+
+tr:hover {
+  background-color: #b2dae1; /* Color cuando se pasa el mouse sobre una fila */
+}
+
+td[colspan="2"] {
+  text-align: center;        /* Asegura que el contenido del encabezado esté centrado */
+  font-size: 1.5em;           /* Aumenta el tamaño de la fuente en la celda de encabezado */
+}
+
+
+/* Estilos globales para los componentes */
+::ng-deep app-header,
+::ng-deep app-work-experience,
+::ng-deep app-skills,
+::ng-deep app-education,
+::ng-deep app-certificates,
+::ng-deep app-languages,
+::ng-deep app-interests {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  margin: 10px;
+}
