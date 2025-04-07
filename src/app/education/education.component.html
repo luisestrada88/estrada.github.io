@@ -1,3 +1,15 @@
+
+<!-- Título fijo -->
+<h2 class="education-title">Education</h2>
+
+<!-- Lista de Educación -->
+<ul *ngFor="let educacion of education;" class="education-list">
+  <li class="education-item">
+    <span class="education-date">{{ educacion.startDate }} - {{ educacion.endDate }}</span><br>
+    <b class="education-career">{{ educacion.carrera }}</b><br>
+    <span class="education-home">{{ educacion.educationHome }}</span><br>
+  </li>
+</ul>
 <ul *ngFor="let educacion of education;">
   <li>
     Education: <br>
