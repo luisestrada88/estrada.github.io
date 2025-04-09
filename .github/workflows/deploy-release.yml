@@ -12,6 +12,7 @@ jobs:
       # added or changed files to the repository.
        contents: write
     steps:
+      - run: ls -la
       - uses: actions/checkout@v2
       - run: echo 'hello world'
       - name: Use Node.js 20.x
