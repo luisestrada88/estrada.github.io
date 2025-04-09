@@ -12,7 +12,8 @@ export class WorkExperienceComponent {
 
     workExperience: WorkExperience[] = [];
 
-    constructor(public workExperienceService: WorkExperienceService) 
+
+    constructor(public workExperienceService: WorkExperienceService)
     {
         console.log(this.workExperienceService);
         this.workExperienceService.getWorkExperience().snapshotChanges().pipe(

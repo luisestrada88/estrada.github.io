@@ -1,8 +1,8 @@
-<ul *ngFor="let lenguajes of languages;">
-  <li>
-    Languages spoken: <br>
-    {{ lenguajes.espaniol }} <br>
-    {{ lenguajes.english }} <br>
+<h2 class="languages-title">Languages</h2>
+
+<ul *ngFor="let lenguaje of languages">
+ <li>
+      {{ lenguaje.name }} - {{ lenguaje.level }} 
+ <br>
   </li>
 </ul>
-~

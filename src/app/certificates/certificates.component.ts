@@ -9,9 +9,9 @@ import { map } from 'rxjs/operators';
   styleUrl: './certificates.component.css'
 })
 export class CertificatesComponent {
-	 certificates: Certificates[] = [];
+         certificates: Certificates[] = [];
 
-	constructor(public certificatesService: CertificatesService){
+        constructor(public certificatesService: CertificatesService){
 
   console.log(this.certificatesService);
     this.certificatesService.getCertificates().snapshotChanges().pipe(
@@ -24,4 +24,5 @@ export class CertificatesComponent {
       this.certificates = data;
       console.log(this.certificates);
     });
-}}
+ }
+}

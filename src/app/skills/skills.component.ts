@@ -10,12 +10,12 @@ import { map } from 'rxjs/operators';
 })
 export class SkillsComponent {
  skills: Skills[] = [];
-	constructor(public skillsService: SkillsService) { 
- 	console.log(this.skillsService);
-    	this.skillsService.getSkills().snapshotChanges().pipe(
-      		map(changes =>
-       		 changes.map(c => ({
-         	 id: c.payload.doc.id, ...c.payload.doc.data()
+        constructor(public skillsService: SkillsService) {
+        console.log(this.skillsService);
+        this.skillsService.getSkills().snapshotChanges().pipe(
+                map(changes =>
+                 changes.map(c => ({
+                 id: c.payload.doc.id, ...c.payload.doc.data()
         }))
       )
     ).subscribe(data => {
